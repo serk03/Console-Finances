@@ -91,16 +91,23 @@ var finances = [
 var numberOfMonths = finances.length;
 
 // Adds all the numbers in the months to produce the overall total.
+var firstvalue = 0;
+var secondvalue = 0;
+var finalValue = 0;
 for (let index = 0; index < finances.length; index++) {
-  var element = finances[index];
-  var total = element;
+  firstvalue = finances[index][1];
+  if (typeof firstvalue === "number") {
+    secondvalue += firstvalue;
+    firstvalue = 0;
+    // finalValue = secondvalue;
+  }
 }
 
 console.log("Financial Analysis");
 console.log("--------------------------");
 console.log("Total Months: " + numberOfMonths);
 
-console.log("Total: ");
+console.log("Total: $" + secondvalue);
 console.log("Average Change:");
 console.log("Greatest Increase in Profits/Losses:");
 console.log("Greatest Decrease in Profits/Losses:");
