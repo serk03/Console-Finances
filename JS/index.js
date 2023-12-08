@@ -87,11 +87,18 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
+// Adds the number items in the array to produce overall amount of months.
+var numberOfMonths = finances.length;
+
+// Adds all the numbers in the months to produce the overall total.
+for (let index = 0; index < finances.length; index++) {
+  var element = finances[index];
+  var total = element;
+}
+
 console.log("Financial Analysis");
 console.log("--------------------------");
-
-// Adds the number items in the array to produce overall amount of months.
-console.log("Total Months: " + finances.length);
+console.log("Total Months: " + numberOfMonths);
 
 console.log("Total: ");
 console.log("Average Change:");
