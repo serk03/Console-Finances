@@ -86,28 +86,67 @@ var finances = [
   ["Jan-2017", 138230],
   ["Feb-2017", 671099],
 ];
-
-// Adds the number items in the array to produce overall amount of months.
+//--------------------------------------------------------------------------------
+//Task.1 - Adds the number items in the array to produce overall amount of months.
 var numberOfMonths = finances.length;
 
-// Adds all the numbers in the months to produce the overall total.
-var firstvalue = 0;
+//--------------------------------------------------------------------------------
+//Task.2 - Adds all the numbers in the months to produce the overall total.
 var secondvalue = 0;
-var finalValue = 0;
+var total = 0;
+var totalFiscalChange = 0;
+var greatestChange = ["", 0];
+
 for (let index = 0; index < finances.length; index++) {
-  firstvalue = finances[index][1];
-  if (typeof firstvalue === "number") {
-    secondvalue += firstvalue;
-    firstvalue = 0;
-    // finalValue = secondvalue;
+  var currentMonthfiscalValue = finances[index][1];
+  var change = 0;
+
+  if (typeof currentMonthfiscalValue === "number") {
+    total += currentMonthfiscalValue;
+  }
+
+  if (index > 0) {
+    var previousMonthFiscalVal = finances[index - 1][1];
+
+    change = currentMonthfiscalValue - previousMonthFiscalVal;
+    totalFiscalChange += change;
+  }
+
+  //--------------------------------------------------------------------------------
+  //Task.3 - The Average changes in profit/losses over the entire period
+  var changes = secondvalue;
+  secondvalue = secondvalue / finances.length - 1;
+
+  var average =
+    Math.round((totalFiscalChange / (finances.length - 1)) * 100) / 100;
+
+  //-------------------------------------------------------------------------------
+  //Task.4 - The greatest increase in Profit/Losses (date and amount) over the entire period.
+  if (change > greatestChange[1]) {
+    greatestChange = [finances[index][0], change];
   }
 }
+//-------------------------------------------------------------------------------
+//Task.5 - The greatest decrease in Profit/Losses (date and amount) over the entire period.
 
+//-------------------------------------------------------------------------------
+// console.log(totalFiscalChange);
+
+//---------------------------------------------------
+// console.log(average);
+//Logs to the console window
+//---------------------------------------------------
 console.log("Financial Analysis");
 console.log("--------------------------");
 console.log("Total Months: " + numberOfMonths);
 
-console.log("Total: $" + secondvalue);
-console.log("Average Change:");
-console.log("Greatest Increase in Profits/Losses:");
+console.log("Total: $" + total);
+console.log("Average Change: " + average);
+console.log(
+  "Greatest Increase in Profits/Losses:" +
+    greatestChange[0] +
+    " (" +
+    greatestChange[1] +
+    ")"
+);
 console.log("Greatest Decrease in Profits/Losses:");
