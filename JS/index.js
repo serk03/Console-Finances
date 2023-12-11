@@ -96,6 +96,7 @@ var secondvalue = 0;
 var total = 0;
 var totalFiscalChange = 0;
 var greatestChange = ["", 0];
+var greatestLoss = ["", 0];
 
 for (let index = 0; index < finances.length; index++) {
   var currentMonthfiscalValue = finances[index][1];
@@ -119,23 +120,23 @@ for (let index = 0; index < finances.length; index++) {
 
   var average =
     Math.round((totalFiscalChange / (finances.length - 1)) * 100) / 100;
-
   //-------------------------------------------------------------------------------
   //Task.4 - The greatest increase in Profit/Losses (date and amount) over the entire period.
   if (change > greatestChange[1]) {
     greatestChange = [finances[index][0], change];
   }
+
+  //-------------------------------------------------------------------------------
+  //Task.5 - The greatest decrease in Profit/Losses (date and amount) over the entire period.
+  if (change < greatestLoss[1]) {
+    greatestLoss = [finances[index][0], change];
+  }
 }
 //-------------------------------------------------------------------------------
-//Task.5 - The greatest decrease in Profit/Losses (date and amount) over the entire period.
-
-//-------------------------------------------------------------------------------
-// console.log(totalFiscalChange);
 
 //---------------------------------------------------
-// console.log(average);
-//Logs to the console window
-//---------------------------------------------------
+// Logs to the console window
+// ---------------------------------------------------
 console.log("Financial Analysis");
 console.log("--------------------------");
 console.log("Total Months: " + numberOfMonths);
@@ -145,8 +146,14 @@ console.log("Average Change: " + average);
 console.log(
   "Greatest Increase in Profits/Losses:" +
     greatestChange[0] +
-    " (" +
+    " ($" +
     greatestChange[1] +
     ")"
 );
-console.log("Greatest Decrease in Profits/Losses:");
+console.log(
+  "Greatest Decrease in Profits/Losses:" +
+    greatestLoss[0] +
+    " ($" +
+    greatestLoss[1] +
+    ")"
+);
