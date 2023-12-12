@@ -139,9 +139,9 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 ## Credits
 
-No collaborators where used when refactoring this website.
+Author of Project - Serkan Onal
 
-Sole authour
+Assistance/ Collaboration and pair programming on this project was provided by Tudor Tocan during tutoring session.
 
 
 ## License
