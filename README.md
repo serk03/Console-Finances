@@ -54,6 +54,7 @@ Once all the required analyses are done, these should be outputted to the consol
 
 
 - What did you learn?<br>
+  
   1. I leant how to declare variables, setup arrays, use loops and if-statements to output useful information.
   <br><br>
   1. Using Pseudocode to help break down a task into smaller segments.
@@ -68,7 +69,7 @@ Once all the required analyses are done, these should be outputted to the consol
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Live Site](#live-site)
-  - [Serkan Onal JavaScript Financial Console Portfolio and Source code on Github](#serkan-onal-javascript-financial-console-portfolio-and-source-code-on-github)
+  - [Serkan Onal JavaScript Financial Console Project and Source code on Github](#serkan-onal-javascript-financial-console-project-and-source-code-on-github)
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
@@ -114,7 +115,7 @@ Once all the required analyses are done, these should be outputted to the consol
 ## Live Site
 - To view the live/ active website please click on the following link: [View Live Serkan Onal JavaScript Financial Console Project]()
 
-## Serkan Onal JavaScript Financial Console Portfolio and Source code on Github
+## Serkan Onal JavaScript Financial Console Project and Source code on Github
 - To view the repository and its source code please visit Github by clicking on the following link: [View Github Repository](https://github.com/serk03/Console-Finances)
 
 
