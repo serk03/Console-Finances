@@ -113,7 +113,7 @@ Once all the required analyses are done, these should be outputted to the consol
 <br>
 
 ## Live Site
-- To view the live/ active website please click on the following link: [View Live Serkan Onal JavaScript Financial Console Project]()
+- To view the live/ active website please click on the following link: [View Live Serkan Onal JavaScript Financial Console Project](https://serk03.github.io/Console-Finances/)
 
 ## Serkan Onal JavaScript Financial Console Project and Source code on Github
 - To view the repository and its source code please visit Github by clicking on the following link: [View Github Repository](https://github.com/serk03/Console-Finances)
@@ -124,7 +124,9 @@ Once all the required analyses are done, these should be outputted to the consol
 Provide instructions and examples for use. Include screenshots as needed.
 
 **Console Out**
-  - To inspect the code in the console window run the index.html in the browser either by double clicking on the index.html file from the root folder or open the index.html from your code editor by using live server.
+  - Doubled click on index.html file from the cloned repository.
+  - Once the browser has opened up right click on the page and navigate to the "Inspect" option, this will open the "Inspect" console.
+  - Click on the "Console" tab  from the "Inspect" menu, then you will be able to see the financial Analysis output.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
@@ -133,7 +135,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 
 
-![alt text](./images/screencapture-127-0-0-1-5501-index-html-2023-12-05-22_30_44.png)
+![alt text](./assets/images/Serkan-Onal-JS-Finanical-Console.PNG)
 
 ## Credits
 
