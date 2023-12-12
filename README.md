@@ -1,97 +1,147 @@
-# Unit 4 Challenge: Console Finances
+# Serkan Onal JavaScript Financial Console
 
-## Overview
+## Description
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+This first JavaScript project was created in order to show my ability to work with JavaScript code, EDX provided the starter code to which i had to add and improve to make this into a functional financial calculator.
 
-## Instructions
+As my first JavaScript assignment i had to use what had been taught/ provided by EDX in the first week to code a financial calculator.
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+Prior to adding any of my own code i was provided with a dataset with an array with two fields of data, a date and profit/ losses.
 
-2. Copy the starter files in your local git repository.
+The financial calculator which i was tasked to code is to be used to analyze the records and to calculate the follow:
 
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
+- The total number of months included in the dataset.
+- The net total amount of Profit/Losses over the entire period.
+- The average of the changes in Profit/Losses over the entire period.
+- The greatest increase in Profit/Losses (date and amount) over the entire period.
+- The greatest decrease in Profit/Losses (date and amount) over the entire period.
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+Once all the required analyses are done, these should be outputted to the console with the figures.
 
-* The total number of months included in the dataset.
 
-* The net total amount of Profit/Losses over the entire period.
+ Some considerations beforehand and during the development. 
 
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-  * (`Total/(Number of months - 1)`)
+- ***Clean and consistant Code*** -Clean code with useful naming conventions.
+- ***Code Reusablitiy*** - Provide code which is DRY, reusing existing code to form new functions.
+- ***Responsive Design*** -Research on how to achieve specific functions or tasks using what has been taught as far from EDX.
+- ***Plan Code*** - Think about what will be required ahead of coding, plan what variables, methods and concepts to adopt in code before writting any code.
+<br>
+<br>
 
-* The greatest increase in Profit/Losses (date and amount) over the entire period.
+- **What was the motivation for this project**
+  <br> 
+  I wanted to show my case ability to understand working with JavaScript.
 
-* The greatest decrease in Profit/Losses (date and amount) over the entire period.
+  I wanted to use what was taught from in introduction in JavaScript from EDX and adapt those teachings into this project and try gain further understanding of JavaScript and how it can be used within real world projects.
 
-When you open your code in the browser your resulting analysis should look similar to the following:
+  I wanted to use this project to gauge my understand of JavaScript so that i would be able to identify areas which will require improvement.
+  <br>
+  <br>
+- **Why was this project built**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  1. To allow people/ employers the ability view my understanding of JavaScript.
+  <br>
+  1. To demonstrate my ability using JavaScript however limited the teaching has been.
+  <br>
+  1. To gauge my understanding of JavaScript to identify areas for improvement for further projects in the future.
+<br>
 
-  ```text
-  Financial Analysis 
-  ----------------
-  Total Months: 86
-  Total: $38382578
-  Average Change: -2315.12
-  Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-  Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
+- **The problems that where solved in this project**
+<br>
+ 1. The ability to understand and use JavaScript, working with new concepts within the JavaScript language.<br><br>
+ 2. Using variables, arrays, if statements, if-else statements and for-loops to obtain and extraction information to provide a useful output.
+ 3. To take information from a data set and manlipulate with methods to output information that is useful for finanical analyses.
 
-Your final code should print the analysis to the console.
 
-**Hints:**
+- What did you learn?<br>
+  1. I leant how to declare variables, setup arrays, use loops and if-statements to output useful information.
+  <br><br>
+  1. Using Pseudocode to help break down a task into smaller segments.
+  <br><br>
+  1. Pair programming and how working with another developer can help gain a new prospective on tasks/ methods.
+  
+## Table of Contents
 
-* You will need to do some research on your own for this project!
 
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
+- [Serkan Onal JavaScript Financial Console](#serkan-onal-javascript-financial-console)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Live Site](#live-site)
+  - [Serkan Onal JavaScript Financial Console Portfolio and Source code on Github](#serkan-onal-javascript-financial-console-portfolio-and-source-code-on-github)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
 
-* How do you only print to the nearest 100th in JavaScript?
+## Installation
 
-## Grading Requirements
 
-This homework is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+**Using Git to create a copy/ clone of website.**
 
-* Satisfies all of the above acceptance criteria.
 
-### Deployment: 32%
+1. Open either Git Bash (Windows) or Terminal (MacOS) and the following commands to create a copy of the website.
+   
+2. Create a folder/ directory to store website folders/ files within it use the following command<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+ ` mkdir "folder name"`<br>
 
-* Application deployed at live URL.
+1.  Navgate into folder using following command.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+  `cd "folder name"`<br>
 
-* Application loads with no errors.
+1. To make a copy/ clone of the website inside of the folder/ directory use the following command<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+  `git clone git@github.com:serk03/Console-Finances.git`
+  
+1. Navigate inside of your folder/ directory that you copied using the following commands.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+  `cd "folder/ directory name"`
 
-* Application GitHub URL submitted.
+1. To view the folder/ files from the website inside a VS Code using the following command.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+  `code .`
 
-* GitHub repository contains application code.
+1. Open the files you would like to view using the following command.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  -index.html - right and select open with default browser, will open the website in your default browser.
+  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ -Double click on either index.html/ index.js to view code that has been used to create website structure (index.html) and javascript (index.js).
 
-### Repository Quality: 23%
+<br>
 
-* Repository has a unique name.
+## Live Site
+- To view the live/ active website please click on the following link: [View Live Serkan Onal JavaScript Financial Console Project]()
 
-* Repository follows best practices for file structure and naming conventions.
+## Serkan Onal JavaScript Financial Console Portfolio and Source code on Github
+- To view the repository and its source code please visit Github by clicking on the following link: [View Github Repository](https://github.com/serk03/Console-Finances)
 
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+## Usage
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+Provide instructions and examples for use. Include screenshots as needed.
 
-### Application Quality: 5%
+**Console Out**
+  - To inspect the code in the console window run the index.html in the browser either by double clicking on the index.html file from the root folder or open the index.html from your code editor by using live server.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+**VS CODE**
+- To view the source code of the JavaScript open the cloned repo folder in your choosen code editor and doubled click on the index.js from the JS folder.
 
-## Review
 
-You are required to submit BOTH of the following for review:
 
-* The URL of the deployed application.
+![alt text](./images/screencapture-127-0-0-1-5501-index-html-2023-12-05-22_30_44.png)
 
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+## Credits
 
----
+No collaborators where used when refactoring this website.
 
-## Copyright
+Sole authour
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## License
+
+No Licenses where used or applied to this website.
+
