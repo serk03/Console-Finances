@@ -1,4 +1,4 @@
-# Serkan Onal JavaScript Financial Console
+# Serkan Onal JavaScript Financial Console Project
 
 ## Description
 
@@ -64,7 +64,7 @@ Once all the required analyses are done, these should be outputted to the consol
 ## Table of Contents
 
 
-- [Serkan Onal JavaScript Financial Console](#serkan-onal-javascript-financial-console)
+- [Serkan Onal JavaScript Financial Console Project](#serkan-onal-javascript-financial-console-project)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
